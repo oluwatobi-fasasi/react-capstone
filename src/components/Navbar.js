@@ -1,8 +1,8 @@
 // components/Navbar.js
 import React from 'react';
-import { NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-const Navbar = () => ( 
+const Navbar = () => (
   <nav className="navbar">
     <ul>
       <li>
