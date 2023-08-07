@@ -6,9 +6,7 @@ import Logo from '../components/Logo';
 const Layout = () => (
   <>
     <Logo />
-    ;
     <Navbar />
-    ;
     <Outlet />
   </>
 );
