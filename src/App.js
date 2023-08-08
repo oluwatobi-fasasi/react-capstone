@@ -1,21 +1,18 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Logo from './components/Logo';
-import Navbar from './components/Navbar';
-
-const Rocket = () => <div>Rockets content</div>;
-const Mission = () => <div>Missions content</div>;
-const Profile = () => <div>Profile content</div>;
+import Layout from './pages/Layout';
+import Mission from './pages/Missions';
+import Profile from './pages/Profile';
+import Rocket from './pages/Rockets';
+import './app.css';
 
 const App = () => (
   <BrowserRouter>
-    <Logo />
-    <Navbar />
     <Routes>
-      <Route path="/" element={Rocket}>
-        <Route index element={<Rockets />} />
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Rocket />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/contact" element={<Missions />} />
+        <Route path="/missions" element={<Mission />} />
       </Route>
     </Routes>
   </BrowserRouter>
