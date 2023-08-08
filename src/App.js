@@ -1,11 +1,14 @@
+import React from 'react';
+import Logo from './components/Logo';
+import Navbar from './components/Navbar';
 import RocketApp from './components/RocketApp';
 
-function App() {
-  return (
-    <div>
-      <RocketApp />
-    </div>
-  );
-}
+const App = () => (
+  <div className="app">
+    <Logo />
+    <Navbar />
+  <RocketApp />
+  </div>
+);
 
 export default App;
