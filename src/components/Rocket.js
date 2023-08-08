@@ -8,8 +8,19 @@ export default function Rocket() {
     dispatch(fetchRocketsAsync());
   }, [dispatch]);
   const rockets = useSelector(selectAll);
-  console.log(rockets);
+
   return (
-    <div>This is ROCKET component</div>
+    <div className="rocket-list">
+      {rockets.map((rocket) => (
+        <div key={rocket.id} className="rocket-card">
+          <img src={rocket.image} alt={rocket.name} className="rocket-image" />
+          <div className="rock-desc">
+            <h2 className="rocket-name">{rocket.name}</h2>
+            <p className="rocket-desc">{rocket.desc}</p>
+            <button type="submit" className="reserve-button">Reserve Rocket</button>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
