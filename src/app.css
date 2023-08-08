@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 20px;
+  margin-bottom: 20px;
   padding: 10px;
   border-bottom: 1px solid #b3afaf;
   box-shadow: 2px 2px 2px 2px #dfdfdf;
@@ -11,6 +11,7 @@
 .logo {
   display: flex;
   gap: 25px;
+  align-items: center;
 }
 
 .logo img {
@@ -36,4 +37,63 @@ nav ul li a {
 .active {
   text-decoration: underline;
   color: blue;
+}
+
+.mission-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #dfdfdfd1;
+}
+
+.join-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #18a2b8;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #18a2b8;
+}
+
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.miss-desc {
+  width: 95%;
+}
+
+.mission-info {
+  display: flex;
+  width: 87%;
+  justify-content: center;
+}
+
+.mission-name {
+  width: 20%;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.miss-heading {
+  margin-left: 27px;
 }
