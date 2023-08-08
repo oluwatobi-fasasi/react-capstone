@@ -13,6 +13,17 @@ import Mission from '../components/mission';
         console.error('Error fetching missions:', error);
       }
     };
+  return (
+    <div>
+      <div className="heading">
+        <p className="miss-heading">Missions</p>
+        <p>Description</p>
+        <p>Status</p>
+      </div>
+      {missions.map((mission) => (
+        <Mission key={mission.mission_id} mission={mission} />
+      ))}
+    </div>
 );
 
 export default Mission;
