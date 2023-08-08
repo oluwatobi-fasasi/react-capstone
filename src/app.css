@@ -36,7 +36,42 @@ nav ul li a {
 
 .active {
   text-decoration: underline;
-  color: blue;
+  color: #06f;
+}
+
+.dragon-image {
+  width: 300px;
+  height: 250px;
+}
+
+.dragon-component ul {
+  list-style: none;
+  margin: 5px;
+}
+
+.dragon-desc {
+  font-size: 15px;
+  text-align: justify;
+  width: 96%;
+}
+
+.dragon-component ul li {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.dragon-btn {
+  padding: 8px;
+  font-size: 15px;
+  color: #fff;
+  background-color: #06f;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.desc {
+  margin-top: -22px;
 }
 
 .mission-container {
