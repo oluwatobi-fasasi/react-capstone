@@ -1,7 +1,9 @@
-import React from 'react';
+import Rocket from '../components/Rocket';
 
-const Rocket = () => (
-  <div>Rockets page</div>
-);
-
-export default Rocket;
+export default function RocketPage() {
+  return (
+    <div>
+      <Rocket />
+    </div>
+  );
+}

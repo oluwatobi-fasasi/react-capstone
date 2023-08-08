@@ -23,7 +23,6 @@ export const fetchDragonsAsync = createAsyncThunk('dragon/fetchDragons', async (
     return thunkAPI.rejectWithValue(error);
   }
 });
-fetchDragonsAsync();
 
 const dragonSlice = createSlice({
   name: 'dragon',
