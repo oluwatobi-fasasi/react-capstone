@@ -132,3 +132,17 @@ p {
 .miss-heading {
   margin-left: 27px;
 }
+/* Rocket */
+
+.rocket-card {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.rock-desc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-left: 18px;
+}
+
