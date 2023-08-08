@@ -12,7 +12,8 @@ export const fetchDragonsAsync = createAsyncThunk('dragon/fetchDragons', async (
         id: dItem.id,
         name: dItem.name,
         type: dItem.type,
-        flickr_images: dItem.flickr_images,
+        desc: dItem.description,
+        flickr_images: dItem.flickr_images[1],
       };
       dragonData.push(newDragon);
       return null;
