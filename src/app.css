@@ -82,6 +82,7 @@ nav ul li a {
   align-items: center;
   gap: 10px;
   background-color: #dfdfdfd1;
+  justify-content: center;
 }
 
 .join-button {
@@ -108,7 +109,9 @@ p {
 }
 
 .miss-desc {
-  width: 95%;
+  width: 87%;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .mission-info {
@@ -117,8 +120,8 @@ p {
   justify-content: center;
 }
 
-.mission-name {
-  width: 20%;
+.miss-name {
+  width: 25%;
 }
 
 .heading {
