@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setMissions } from '../redux/mission/missionslice';
 import Mission from '../components/mission';
+const MissionPage = () => {
+  const missions = useSelector((state) => state.mission.missions);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const fetchMissions = async () => {
