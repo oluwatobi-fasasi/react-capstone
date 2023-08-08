@@ -159,3 +159,18 @@ p {
 .rocket-desc {
   margin-bottom: 18px;
 }
+
+.reserve-button {
+  background-color: #06f;
+  color: white;
+  width: 127px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+  background-color: #06f;
+}
