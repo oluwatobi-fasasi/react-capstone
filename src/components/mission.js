@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveMission } from '../redux/mission/missionslice';
+
 const Mission = ({ mission }) => {
   const dispatch = useDispatch();
 
@@ -25,6 +26,7 @@ const Mission = ({ mission }) => {
     </div>
   );
 };
+
 Mission.propTypes = {
   mission: PropTypes.shape({
     mission_id: PropTypes.string.isRequired,
@@ -32,3 +34,5 @@ Mission.propTypes = {
     description: PropTypes.string.isRequired,
   }).isRequired,
 };
+
+export default Mission;
