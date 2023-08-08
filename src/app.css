@@ -51,7 +51,7 @@ nav ul li a {
 .dragon-desc {
   font-size: 15px;
   text-align: justify;
-  margin-right: 8px;
+  width: 96%;
 }
 
 .dragon-component ul li {
