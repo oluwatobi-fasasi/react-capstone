@@ -3,6 +3,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   missions: [],
 };
+
 const missionSlice = createSlice({
   name: 'mission',
   initialState,
@@ -29,6 +30,7 @@ const missionSlice = createSlice({
     },
   },
 });
+
 export const { setMissions, reserveMission, cancelMission } = missionSlice.actions;
 
 export default missionSlice.reducer;
