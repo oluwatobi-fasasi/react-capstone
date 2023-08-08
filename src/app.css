@@ -1,9 +1,16 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #b3afaf;
+  box-shadow: 2px 2px 2px 2px #dfdfdf;
+}
+
 .logo {
   display: flex;
-  margin-left: 50px;
-  align-items: center;
-  width: 370px;
-  justify-content: space-between;
+  gap: 25px;
 }
 
 .logo img {
@@ -11,7 +18,22 @@
   height: 50px;
 }
 
-.head-wrap {
-  border-bottom: 1px solid #b3afaf;
-  box-shadow: 2px 2px 2px 2px #dfdfdf;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 18px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.active {
+  text-decoration: underline;
+  color: blue;
 }

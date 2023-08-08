@@ -1,13 +1,24 @@
 import React from 'react';
-import Logo from './components/Logo';
-import Navbar from './components/Navbar';
-import RocketApp from './components/RocketApp';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './pages/Layout';
+import Mission from './pages/MissionsPage';
+import Profile from './pages/ProfilePage';
+import Rocket from './pages/RocketsPage';
+import Dragons from './pages/DragonsPage';
+import './app.css';
 
 const App = () => (
   <div className="app">
-    <Logo />
-    <Navbar />
-    <RocketApp />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Rocket />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/dragons" element={<Dragons />} />
+          <Route path="/missions" element={<Mission />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </div>
 );
 
