@@ -18,3 +18,10 @@ import { reserveMission } from '../redux/mission/missionslice';
     </div>
   );
 };
+Mission.propTypes = {
+  mission: PropTypes.shape({
+    mission_id: PropTypes.string.isRequired,
+    mission_name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+  }).isRequired,
+};
