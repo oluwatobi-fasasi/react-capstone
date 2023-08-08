@@ -29,3 +29,6 @@ const missionSlice = createSlice({
     },
   },
 });
+export const { setMissions, reserveMission, cancelMission } = missionSlice.actions;
+
+export default missionSlice.reducer;
