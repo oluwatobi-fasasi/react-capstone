@@ -5,6 +5,7 @@ import missionReducer from './mission/missionslice';
 const store = configureStore({
   reducer: {
     dragon: dragonsSlice,
+    mission: missionReducer,
   },
 });
 
