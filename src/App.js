@@ -1,6 +1,10 @@
+import RocketApp from './components/RocketApp';
+
 function App() {
   return (
-    <div>Hello</div>
+    <div>
+      <RocketApp />
+    </div>
   );
 }
 
