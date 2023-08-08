@@ -1,32 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { reserveMission } from '../redux/mission/missionslice';
+import { reserveMission, cancelMission } from '../redux/mission/missionslice';
 
 const Mission = ({ mission }) => {
   const dispatch = useDispatch();
 
-  const handleJoinMission = () => {
+  const handleReserveMission = () => {
     dispatch(reserveMission(mission.mission_id));
+  };
+
+  const handleCancelMission = () => {
+    dispatch(cancelMission(mission.mission_id));
   };
 
   return (
     <div className="mission-container">
-      <div className="mission-name">
-        <h2>{mission.mission_name}</h2>
-      </div>
       <div className="mission-info">
+        <h2 className="miss-name">{mission.mission_name}</h2>
         <p className="miss-desc">{mission.description}</p>
       </div>
       <div className="mission-buttons">
         {mission.reserved ? (
           <button type="submit" className="cancel-button" onClick={handleCancelMission}>
-            Cancel Mission
+            Leave Mission
           </button>
         ) : (
           <button type="submit" className="join-button" onClick={handleReserveMission}>
-          Join Mission
-        </button>
+            Join Mission
+          </button>
         )}
       </div>
     </div>
@@ -38,6 +40,7 @@ Mission.propTypes = {
     mission_id: PropTypes.string.isRequired,
     mission_name: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
+    reserved: PropTypes.bool.isRequired,
   }).isRequired,
 };
 
