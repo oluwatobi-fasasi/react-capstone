@@ -1,24 +1,24 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
-import Mission from './pages/Missions';
-import Profile from './pages/Profile';
-import Rocket from './pages/Rockets';
+import Mission from './pages/MissionsPage';
+import Profile from './pages/ProfilePage';
+import Rocket from './pages/RocketsPage';
+import Dragons from './pages/DragonsPage';
 import './app.css';
-import RocketApp from './components/RocketApp';
 
 const App = () => (
   <div className="app">
-   <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Rocket />} />
-        <Route path="/profile" element={<Profile />} />
-        <Route path="/missions" element={<Mission />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>
-    <RocketApp />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Rocket />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/dragons" element={<Dragons />} />
+          <Route path="/missions" element={<Mission />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </div>
 );
 
