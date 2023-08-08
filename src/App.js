@@ -5,9 +5,11 @@ import Mission from './pages/Missions';
 import Profile from './pages/Profile';
 import Rocket from './pages/Rockets';
 import './app.css';
+import RocketApp from './components/RocketApp';
 
 const App = () => (
-  <BrowserRouter>
+  <div className="app">
+   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Rocket />} />
@@ -16,6 +18,8 @@ const App = () => (
       </Route>
     </Routes>
   </BrowserRouter>
+    <RocketApp />
+  </div>
 );
 
 export default App;
