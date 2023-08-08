@@ -2,6 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { reserveMission } from '../redux/mission/missionslice';
+const Mission = ({ mission }) => {
+  const dispatch = useDispatch();
+
+  const handleJoinMission = () => {
+    dispatch(reserveMission(mission.mission_id));
+  };
+
   return (
     <div className="mission-container">
       <div className="mission-name">
