@@ -37,3 +37,11 @@ nav ul li a {
   text-decoration: underline;
   color: blue;
 }
+
+.dragon-image {
+  width: 200px;
+}
+
+.dragon-component ul {
+  list-style: none;
+}

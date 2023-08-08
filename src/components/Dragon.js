@@ -8,17 +8,16 @@ export default function Dragon() {
     dispatch(fetchDragonsAsync());
   }, [dispatch]);
   const dragons = useSelector(selectAll);
-  console.log(dragons);
   return (
-    <div>
-      <h2>Dragons Page </h2>
+    <div className="dragon-component">
       <ul>
-        {dragons.map(dragon => (
+        {dragons.map((dragon) => (
           <li key={dragon.id}>
             <h3>{dragon.name}</h3>
-            <p>{dragon.description}</p>
+            <p>{dragon.desc}</p>
+            <p><button type="submit">Reserve Dragon</button></p>
             {dragon.flickr_images.length > 0 && (
-              <img src={dragon.flickr_images[0]} alt={`${dragon.name} Dragon`} />
+              <img className="dragon-image" src={dragon.flickr_images} alt={`${dragon.name} Dragon`} />
             )}
           </li>
         ))}
