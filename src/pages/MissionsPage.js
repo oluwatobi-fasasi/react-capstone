@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setMissions } from '../redux/mission/missionslice';
 import Mission from '../components/mission';
+
 const MissionPage = () => {
   const missions = useSelector((state) => state.mission.missions);
   const dispatch = useDispatch();
@@ -16,6 +17,10 @@ const MissionPage = () => {
         console.error('Error fetching missions:', error);
       }
     };
+
+    fetchMissions();
+  }, [dispatch]);
+
   return (
     <div>
       <div className="heading">
@@ -27,6 +32,7 @@ const MissionPage = () => {
         <Mission key={mission.mission_id} mission={mission} />
       ))}
     </div>
-);
+  );
+};
 
-export default Mission;
+export default MissionPage;
