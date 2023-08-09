@@ -185,10 +185,10 @@ p {
 /* Missions button */
 
 .cancel-button {
-  color: black;
-  border: 1px solid grey;
+  color: red;
+  border: 1px solid red;
   width: 100px;
   height: 30px;
   border-radius: 4px;
-  background-color: #cccaca;
+  background-color: #e9e5e5;
 }

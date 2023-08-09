@@ -20,6 +20,13 @@ const Mission = ({ mission }) => {
         <h2 className="miss-name">{mission.mission_name}</h2>
         <p className="miss-desc">{mission.description}</p>
       </div>
+      <div className="mission-status">
+        {mission.reserved ? (
+          <span className="active-member">Active member</span>
+        ) : (
+          <span className="not-member">Not a member</span>
+        )}
+      </div>
       <div className="mission-buttons">
         {mission.reserved ? (
           <button type="submit" className="cancel-button" onClick={handleCancelMission}>
