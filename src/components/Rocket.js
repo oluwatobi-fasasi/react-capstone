@@ -28,7 +28,7 @@ export default function Rocket() {
             <p className="rocket-desc">{rocket.desc}</p>
             <button
               type="button"
-              className="reserve-button"
+              className={`reserve-button ${rocket.reserved ? 'cancel-reservation' : 'reservation-button'}`}
               onClick={() => {
                 if (!rocket.reserved) {
                   reserveHandler(rocket.id);
