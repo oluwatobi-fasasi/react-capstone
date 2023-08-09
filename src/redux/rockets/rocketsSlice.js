@@ -18,7 +18,6 @@ export const fetchRocketsAsync = createAsyncThunk('rocket/fetchRockets', async (
       rocketData.push(newRocket);
       return null;
     });
-    console.log(rocketData);
     return rocketData;
   } catch (error) {
     return thunkAPI.rejectWithValue(error);
