@@ -1,4 +1,3 @@
-// dragonsSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -32,7 +31,14 @@ const dragonSlice = createSlice({
       const { payload: dragonId } = action;
       const dragon = state.dragons.find((dragon) => dragon.id === dragonId);
       if (dragon) {
-        dragon.reserved = !dragon.reserved; // Toggle reservation
+        dragon.reserved = !dragon.reserved;
+      }
+    },
+    cancelDragonReservation: (state, action) => {
+      const { payload: dragonId } = action;
+      const dragon = state.dragons.find((dragon) => dragon.id === dragonId);
+      if (dragon) {
+        dragon.reserved = false;
       }
     },
   },
@@ -52,5 +58,5 @@ const dragonSlice = createSlice({
 });
 
 export const selectAllDragons = (state) => state.dragon.dragons;
-export const { reserveDragon } = dragonSlice.actions;
+export const { reserveDragon, cancelDragonReservation } = dragonSlice.actions;
 export default dragonSlice.reducer;
