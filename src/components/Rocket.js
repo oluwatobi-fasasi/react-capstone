@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchRocketsAsync, selectAll } from '../redux/rockets/rocketsSlice';
+import {
+  fetchRocketsAsync, reserveRocket, selectAll,
+} from '../redux/rockets/rocketsSlice';
 
 export default function Rocket() {
   const dispatch = useDispatch();
@@ -9,6 +11,9 @@ export default function Rocket() {
   }, [dispatch]);
   const rockets = useSelector(selectAll);
 
+  const reserveHandler = (id) => {
+    dispatch(reserveRocket(id));
+  };
   return (
     <div className="rocket-list">
       {rockets.map((rocket) => (
@@ -17,7 +22,13 @@ export default function Rocket() {
           <div className="rock-desc">
             <h2 className="rocket-name">{rocket.name}</h2>
             <p className="rocket-desc">{rocket.desc}</p>
-            <button type="submit" className="reserve-button">Reserve Rocket</button>
+            <button
+              type="button"
+              className="reserve-button"
+              onClick={() => { reserveHandler(rocket.id); }}
+            >
+              {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+            </button>
           </div>
         </div>
       ))}
