@@ -82,6 +82,7 @@ nav ul li a {
   align-items: center;
   gap: 10px;
   background-color: #dfdfdfd1;
+  justify-content: center;
 }
 
 .join-button {
@@ -108,7 +109,9 @@ p {
 }
 
 .miss-desc {
-  width: 95%;
+  width: 87%;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .mission-info {
@@ -117,8 +120,8 @@ p {
   justify-content: center;
 }
 
-.mission-name {
-  width: 20%;
+.miss-name {
+  width: 25%;
 }
 
 .heading {
@@ -131,4 +134,47 @@ p {
 
 .miss-heading {
   margin-left: 27px;
+}
+
+/* Rocket */
+
+.rocket-card {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.rock-desc {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+  margin-left: 18px;
+}
+
+.rocket-image {
+  width: 300px;
+  height: 250px;
+  margin-left: 45px;
+}
+
+.rocket-name {
+  margin-bottom: 18px;
+}
+
+.rocket-desc {
+  margin-bottom: 18px;
+}
+
+.reserve-button {
+  background-color: #06f;
+  color: white;
+  width: 127px;
+  height: 33px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reserve-button:hover {
+  background-color: #06f;
 }

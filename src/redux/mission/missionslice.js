@@ -20,6 +20,7 @@ const missionSlice = createSlice({
           ? { ...mission, reserved: true } : mission)),
       };
     },
+
     cancelMission: (state, action) => {
       const missionId = action.payload;
       return {
