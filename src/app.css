@@ -1,9 +1,9 @@
 .navbar {
   display: flex;
+  background-color: #fff;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
-  padding: 10px;
+  margin: 8px;
   border-bottom: 1px solid #b3afaf;
   box-shadow: 2px 2px 2px 2px #dfdfdf;
 }
@@ -91,13 +91,13 @@ nav ul li a {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #18a2b8;
+  background-color: #06f;
   color: white;
   transition: background-color 0.3s ease;
 }
 
 .join-button:hover {
-  background-color: #18a2b8;
+  background-color: #06f;
 }
 
 h2 {
@@ -167,7 +167,7 @@ p {
 .reserve-button {
   background-color: #06f;
   color: white;
-  width: 127px;
+  width: 128px;
   height: 33px;
   border: none;
   border-radius: 5px;
@@ -175,6 +175,20 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.reserve-button:hover {
-  background-color: #06f;
+.cancel-reservation {
+  background-color: #cccaca;
+  color: black;
+  border: 1px solid grey;
+  width: 132px;
+}
+
+/* Missions button */
+
+.cancel-button {
+  color: black;
+  border: 1px solid grey;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #cccaca;
 }

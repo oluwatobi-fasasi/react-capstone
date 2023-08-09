@@ -31,14 +31,14 @@ const rocketSlice = createSlice({
     isloading: false,
   },
   reducers: {
-    // reserveRocket: (state, action) => {
-    //   state.rockets?.map((rocket) => {
-    //     if (rocket.id === action.payload) {
-    //       rocket.reserved = true;
-    //     }
-    //     return null;
-    //   });
-    // },
+    reserveRocket: (state, action) => {
+      state.rockets?.map((rocket) => {
+        if (rocket.id === action.payload) {
+          rocket.reserved = true;
+        }
+        return null;
+      });
+    },
     cancelReserveRocket: (state, action) => {
       state.rockets?.map((rocket) => {
         if (rocket.id === action.payload) {
@@ -57,5 +57,5 @@ const rocketSlice = createSlice({
 });
 
 export const selectAll = ((state) => state.rocket.rockets);
-export const { /* reserveRocket , */ cancelReserveRocket } = rocketSlice.actions;
+export const { reserveRocket, cancelReserveRocket } = rocketSlice.actions;
 export default rocketSlice.reducer;

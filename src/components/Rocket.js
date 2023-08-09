@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   cancelReserveRocket,
-  fetchRocketsAsync, /* reserveRocket, */ selectAll,
+  fetchRocketsAsync, reserveRocket, selectAll,
 } from '../redux/rockets/rocketsSlice';
 
 export default function Rocket() {
@@ -11,9 +11,9 @@ export default function Rocket() {
     dispatch(fetchRocketsAsync());
   }, [dispatch]);
   const rockets = useSelector(selectAll);
-  // const reserveHandler = (id) => {
-  //   dispatch(reserveRocket(id));
-  // };
+  const reserveHandler = (id) => {
+    dispatch(reserveRocket(id));
+  };
 
   const cancelReserveHandler = (id) => {
     dispatch(cancelReserveRocket(id));
@@ -28,11 +28,11 @@ export default function Rocket() {
             <p className="rocket-desc">{rocket.desc}</p>
             <button
               type="button"
-              className="reserve-button"
+              className={`reserve-button ${rocket.reserved ? 'cancel-reservation' : 'reservation-button'}`}
               onClick={() => {
-                // if (!rocket.reserved) {
-                //   reserveHandler(rocket.id);
-                // }
+                if (!rocket.reserved) {
+                  reserveHandler(rocket.id);
+                }
                 if (rocket.reserved) {
                   cancelReserveHandler(rocket.id);
                 }
