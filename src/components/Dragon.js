@@ -32,7 +32,7 @@ export default function Dragon() {
                     }
                   }}
                 >
-                  {dragon.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+                  {dragon.reserved ? 'Cancel Reservation' : 'Reserve Dragon'}
                 </button>
               </p>
             </div>

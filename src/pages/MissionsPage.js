@@ -25,8 +25,8 @@ const MissionPage = () => {
     <div>
       <div className="heading">
         <p className="miss-heading">Missions</p>
-        <p>Description</p>
-        <p>Status</p>
+        <p className="mission-desc">Description</p>
+        <p className="mission-status">Status</p>
       </div>
       {missions.map((mission) => (
         <Mission key={mission.mission_id} mission={mission} />
