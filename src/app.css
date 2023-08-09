@@ -183,3 +183,12 @@ p {
 }
 
 /* Missions button */
+
+.cancel-button {
+  color: black;
+  border: 1px solid grey;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #cccaca;
+}
