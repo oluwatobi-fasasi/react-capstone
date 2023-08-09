@@ -21,13 +21,13 @@ const missionSlice = createSlice({
       };
     },
 
-    cancelMission: (state, action) => {
-      const missionId = action.payload;
-      return {
-        ...state,
-        missions: state.missions.map((mission) => (mission.mission_id === missionId
-          ? { ...mission, reserved: false } : mission)),
-      };
+    // cancelMission: (state, action) => {
+    //   const missionId = action.payload;
+    //   return {
+    //     ...state,
+    //     missions: state.missions.map((mission) => (mission.mission_id === missionId
+    //       ? { ...mission, reserved: false } : mission)),
+    //   };
     },
   },
 });
