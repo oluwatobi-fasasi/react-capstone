@@ -212,7 +212,7 @@ p {
   width: 150px;
 }
 
-/* .profile-container {
+.profile-container {
   padding: 20px;
   margin: 10px;
   width: 25%;
@@ -231,4 +231,4 @@ p {
 .mission-row {
   padding: 18px;
   border: 1px solid #ccc;
-} */
+}
