@@ -213,9 +213,10 @@ p {
 }
 
 .reserved-badge {
+  width: 4.5rem;
+  padding: 0.5rem;
   color: white;
   background-color: #18a2b8;
-  padding: 3px;
   border-radius: 5px 5px 5px 5px;
   position: relative;
   bottom: 7px;
