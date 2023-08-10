@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Profile from '../components/myProfile';
 
 const ProfilePage = () => {
   const missions = useSelector((state) => state.mission.missions);
@@ -17,6 +18,9 @@ const ProfilePage = () => {
           </li>
         ))}
       </ul>
+    </div>
+    <div>
+      <Profile />
     </div>
   );
 };

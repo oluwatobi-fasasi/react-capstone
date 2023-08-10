@@ -185,7 +185,7 @@ p {
   background-color: #cccaca;
   color: black;
   border: 1px solid grey;
-  width: 163px;
+  width: 152px;
 }
 
 /* Missions button */
@@ -231,4 +231,26 @@ p {
 .mission-row {
   padding: 18px;
   border: 1px solid #ccc;
+
+.reserved-badge {
+  color: white;
+  background-color: #18a2b8;
+  padding: 3px;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  bottom: 7px;
+}
+
+.prof-rockets {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.prof-rock-div {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.prof-rock-ul {
+  padding-left: 23px;
 }

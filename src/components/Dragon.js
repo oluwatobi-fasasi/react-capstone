@@ -21,6 +21,9 @@ export default function Dragon() {
     dispatch(reserveDragon(id));
   };
 
+  const cancelReservationHandler = (id) => {
+    dispatch(cancelDragonReservation(id));
+  };
   return (
     <div className="dragon-component">
       <ul>
@@ -35,22 +38,26 @@ export default function Dragon() {
             )}
             <div className="desc">
               <h3 className="dragon-name">{dragon.name}</h3>
+              {dragon.reserved && <span className="reserved-badge">Reserved</span>}
               <p className="dragon-desc">{dragon.desc}</p>
               <p>
-                <button
-                  type="button"
-                  className={`dragon-btn ${dragon.reserved ? 'cancel-reservation' : 'reserve-rocket'}`}
-                  onClick={() => {
-                    if (dragon.reserved) {
-                      cancelDragonReservation(dragon.id);
-                    } else {
-                      reserveHandler(dragon.id);
-                    }
-                  }}
-                >
-                  {dragon.reserved ? 'Cancel Reservation' : 'Reserve Dragon'}
-                </button>
-
+                {dragon.reserved ? (
+                  <button
+                    type="button"
+                    className="cancel-reservation  dragon-btn"
+                    onClick={() => cancelReservationHandler(dragon.id)}
+                  >
+                    Cancel Reservation
+                  </button>
+                ) : (
+                  <button
+                    type="button"
+                    className="reserve-rocket-btn dragon-btn"
+                    onClick={() => reserveHandler(dragon.id)}
+                  >
+                    Reserve Dragon
+                  </button>
+                )}
               </p>
             </div>
           </li>
