@@ -7,11 +7,11 @@ const Profile = () => {
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
 
   return (
-    <div>
-      <h2>Reserved Rockets:</h2>
-      <ul>
+    <div className="prof-rock-div">
+      <h2>My Rockets:</h2>
+      <ul className="prof-rock-ul">
         {reservedRockets.map((rocket) => (
-          <li key={rocket.id}>{rocket.name}</li>
+          <li className="prof-rockets" key={rocket.id}>{rocket.name}</li>
         ))}
       </ul>
     </div>
