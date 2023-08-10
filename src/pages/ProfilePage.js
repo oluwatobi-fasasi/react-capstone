@@ -20,7 +20,6 @@ const ProfilePage = () => {
           ))}
         </ul>
       </div>
-            
       <div>
         <Profile />
       </div>
@@ -29,4 +28,3 @@ const ProfilePage = () => {
 };
 
 export default ProfilePage;
-
