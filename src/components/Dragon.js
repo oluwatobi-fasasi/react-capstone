@@ -1,3 +1,4 @@
+// Dragon.js
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -23,7 +24,6 @@ export default function Dragon() {
   const cancelReservationHandler = (id) => {
     dispatch(cancelDragonReservation(id));
   };
-
   return (
     <div className="dragon-component">
       <ul>
