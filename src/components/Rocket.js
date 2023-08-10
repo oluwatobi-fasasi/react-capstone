@@ -25,6 +25,7 @@ export default function Rocket() {
           <img src={rocket.image} alt={rocket.name} className="rocket-image" />
           <div className="rock-desc">
             <h2 className="rocket-name">{rocket.name}</h2>
+            {rocket.reserved && <span className="reserved-badge">Reserved</span>}
             <p className="rocket-desc">{rocket.desc}</p>
             <button
               type="button"

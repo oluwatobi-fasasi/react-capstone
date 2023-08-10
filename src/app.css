@@ -50,6 +50,7 @@ nav ul li a {
 }
 
 .dragon-desc {
+  padding: 1.5rem 0;
   font-size: 15px;
   text-align: justify;
   width: 96%;
@@ -213,12 +214,14 @@ p {
 }
 
 .reserved-badge {
+  width: 4.5rem;
+  padding: 0.5rem;
   color: white;
   background-color: #18a2b8;
-  padding: 3px;
   border-radius: 5px 5px 5px 5px;
   position: relative;
   bottom: 7px;
+  margin: 0.6rem 0;
 }
 
 .prof-rockets {
