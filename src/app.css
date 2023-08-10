@@ -185,7 +185,7 @@ p {
   background-color: #cccaca;
   color: black;
   border: 1px solid grey;
-  width: 163px;
+  width: 152px;
 }
 
 /* Missions button */
@@ -212,6 +212,14 @@ p {
   width: 150px;
 }
 
+.reserved-badge {
+  color: white;
+  background-color: #18a2b8;
+  padding: 3px;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  bottom: 7px;
+  
 .prof-rockets {
   list-style: none;
   margin-bottom: 28px;
