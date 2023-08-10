@@ -213,6 +213,27 @@ p {
   width: 150px;
 }
 
+.profile-container {
+  padding: 10px;
+  margin: 10px;
+  width: 25%;
+}
+
+.mission-table {
+  list-style: none;
+  padding: 6px;
+  margin: 0;
+}
+
+.mission-title {
+  padding: 6px;
+}
+
+.mission-row {
+  padding: 18px;
+  border: 1px solid #ccc;
+}
+
 .reserved-badge {
   width: 4.5rem;
   padding: 0.5rem;
