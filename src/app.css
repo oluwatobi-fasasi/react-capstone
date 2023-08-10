@@ -219,4 +219,17 @@ p {
   border-radius: 5px 5px 5px 5px;
   position: relative;
   bottom: 7px;
+  
+.prof-rockets {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.prof-rock-div {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.prof-rock-ul {
+  padding-left: 23px;
 }

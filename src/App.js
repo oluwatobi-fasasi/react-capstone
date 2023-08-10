@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './pages/Layout';
 import MissionPage from './pages/MissionsPage';
-import Profile from './pages/ProfilePage';
+import MyProfilePage from './pages/ProfilePage';
 import Rocket from './pages/RocketsPage';
 import Dragons from './pages/DragonsPage';
 import './app.css';
@@ -13,7 +13,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Rocket />} />
-          <Route path="/profile" element={<Profile />} />
+          <Route path="/profile" element={<MyProfilePage />} />
           <Route path="/dragons" element={<Dragons />} />
           <Route path="/missions" element={<MissionPage />} />
         </Route>
