@@ -32,8 +32,7 @@ export default function Rocket() {
               onClick={() => {
                 if (!rocket.reserved) {
                   reserveHandler(rocket.id);
-                }
-                if (rocket.reserved) {
+                } else {
                   cancelReserveHandler(rocket.id);
                 }
               }}

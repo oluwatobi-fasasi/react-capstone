@@ -211,3 +211,17 @@ p {
   background-color: grey;
   width: 150px;
 }
+
+.prof-rockets {
+  list-style: none;
+  margin-bottom: 28px;
+}
+
+.prof-rock-div {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.prof-rock-ul {
+  padding-left: 23px;
+}
