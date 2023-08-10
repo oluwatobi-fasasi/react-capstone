@@ -19,6 +19,7 @@ const ProfilePage = () => {
         ))}
       </ul>
     </div>
+          
     <div>
       <Profile />
     </div>
