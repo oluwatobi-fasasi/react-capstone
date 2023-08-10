@@ -50,6 +50,7 @@ nav ul li a {
 }
 
 .dragon-desc {
+  padding: 1.5rem 0;
   font-size: 15px;
   text-align: justify;
   width: 96%;
@@ -220,6 +221,7 @@ p {
   border-radius: 5px 5px 5px 5px;
   position: relative;
   bottom: 7px;
+  margin: 0.6rem 0;
 }
 
 .prof-rockets {

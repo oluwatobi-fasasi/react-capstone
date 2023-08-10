@@ -9,7 +9,7 @@ export default function Rocket() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRocketsAsync());
-  });
+  }, [dispatch]);
   const rockets = useSelector(selectAll);
   const reserveHandler = (id) => {
     dispatch(reserveRocket(id));

@@ -13,7 +13,7 @@ export default function Dragon() {
 
   useEffect(() => {
     dispatch(fetchDragonsAsync());
-  });
+  }, [dispatch]);
 
   const dragons = useSelector(selectAllDragons);
 
