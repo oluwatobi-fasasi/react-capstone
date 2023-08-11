@@ -82,7 +82,7 @@ To run this project, you need the following:
 Clone this repository to your desired folder:
 
 ```bash
-git clone https://github.com/oluwatobi-fasasi/reacr-group-project.git
+git clone https://github.com/oluwatobi-fasasi/react-group-project.git
 ```
 
 ### Install
@@ -166,8 +166,8 @@ npm start
 
 ## 🔮 Future Features <a name="future-features"></a>
 
-- [ ] 📱 **About Page**
-- [ ] 📝 **Add Model**
+- [ ] 📱 **Booking page**
+- [ ] 📝 **Add style**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
