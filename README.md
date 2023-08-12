@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <h1>🏆 Space-X App</h1>
+  <h1>🏆 Space Travelers Hub</h1>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -30,7 +30,7 @@
 
 # 📖 About the Project <a name="about-project"></a>
 
-**Space-X** is a company that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.
+**Space Travelers Hub** is a company that provides commercial and scientific space travel services. This application will allow users to book rockets and join selected space missions.
 
 ## 🛠️ Built With <a name="built-with"></a>
 
