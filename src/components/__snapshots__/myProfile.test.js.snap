@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test if the Profile page renders dragon element correctly 1`] = `
+<div
+  className=""
+>
+  <div
+    className="prof-rock-div"
+  >
+    <h2>
+      My Rockets:
+    </h2>
+    <ul
+      className="prof-rock-ul"
+    />
+  </div>
+  <div
+    className="prof-rock-div"
+  >
+    <h2>
+      My Dragon:
+    </h2>
+    <ul
+      className="prof-rock-ul"
+    />
+  </div>
+</div>
+`;
