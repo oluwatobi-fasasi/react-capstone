@@ -8,6 +8,8 @@ const Profile = () => {
   const dragons = useSelector(selectAllDragons);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved);
   const reservedDragons = dragons.filter((dragon) => dragon.reserved);
+  const missions = useSelector((state) => state.mission.missions);
+  const joinedMissions = missions.filter((mission) => mission.reserved);
 
   return (
     <div className="">
