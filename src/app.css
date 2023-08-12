@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   margin: 8px;
+  margin-right: 0;
+  margin-left: 0;
   border-bottom: 1px solid #b3afaf;
   box-shadow: 2px 2px 2px 2px #dfdfdf;
 }
@@ -71,10 +73,6 @@ nav ul li a {
   border: transparent;
 }
 
-.desc {
-  margin-top: -22px;
-}
-
 .mission-container {
   border: 1px solid #ccc;
   padding: 20px;
@@ -124,7 +122,7 @@ p {
 }
 
 .mission-status {
-  margin-right: 150px;
+  margin-right: 20px;
 }
 
 .miss-name {
@@ -183,8 +181,8 @@ p {
 }
 
 .cancel-reservation {
-  background-color: #cccaca;
-  color: black;
+  background-color: #f5f5f5;
+  color: #504f4f;
   border: 1px solid grey;
   width: 152px;
 }
@@ -203,20 +201,29 @@ p {
 .active-member {
   color: #fff;
   background-color: #0a8499;
-  width: 60px;
   font-size: 15px;
+  width: 103px;
+  margin-right: 10px;
+  padding: 5px;
+  display: block;
+  border-radius: 4px 4px 4px 4px;
 }
 
 .not-member {
   color: #fff;
   background-color: grey;
-  width: 150px;
+  width: 103px;
+  padding: 5px;
+  display: block;
+  border-radius: 4px 4px 4px 4px;
 }
 
 .profile-container {
+  display: flex;
   padding: 10px;
   margin: 10px;
   width: 25%;
+  justify-content: center;
 }
 
 .mission-table {
@@ -236,6 +243,8 @@ p {
 
 .reserved-badge {
   width: 4.5rem;
+  text-align: center;
+  display: block;
   padding: 0.5rem;
   color: white;
   background-color: #18a2b8;
@@ -247,14 +256,9 @@ p {
 
 .prof-rockets {
   list-style: none;
-  margin-bottom: 28px;
 }
 
-.prof-rock-div {
-  margin-top: 50px;
-  margin-left: 50px;
-}
-
-.prof-rock-ul {
-  padding-left: 23px;
+.prof-main-div {
+  display: flex;
+  justify-content: center;
 }
