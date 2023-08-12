@@ -7,10 +7,14 @@ import {
 
 export default function Rocket() {
   const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(fetchRocketsAsync());
-  }, [dispatch]);
   const rockets = useSelector(selectAll);
+
+  useEffect(() => {
+    if (rockets.length === 0) {
+      dispatch(fetchRocketsAsync());
+    }
+  }, [dispatch, rockets.length]);
+
   const reserveHandler = (id) => {
     dispatch(reserveRocket(id));
   };
@@ -25,7 +29,7 @@ export default function Rocket() {
           <img src={rocket.image} alt={rocket.name} className="rocket-image" />
           <div className="rock-desc">
             <h2 className="rocket-name">{rocket.name}</h2>
-            {rocket.reserved && <span className="reserved-badge">Reserved</span>}
+            {rocket.reserved && <span className="reserved-badge-rock">Reserved</span>}
             <p className="rocket-desc">{rocket.desc}</p>
             <button
               type="button"

@@ -14,12 +14,14 @@ const MissionPage = () => {
         const data = await response.json();
         dispatch(setMissions(data));
       } catch (error) {
-        // error handle
+        // Handle error
       }
     };
 
-    fetchMissions();
-  }, [dispatch]);
+    if (missions.length === 0) {
+      fetchMissions();
+    }
+  }, [missions, dispatch]);
 
   return (
     <div>

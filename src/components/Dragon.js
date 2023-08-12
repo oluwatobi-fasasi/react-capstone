@@ -11,11 +11,13 @@ import {
 export default function Dragon() {
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchDragonsAsync());
-  }, [dispatch]);
-
   const dragons = useSelector(selectAllDragons);
+
+  useEffect(() => {
+    if (dragons.length === 0) {
+      dispatch(fetchDragonsAsync());
+    }
+  }, [dispatch, dragons.length]);
 
   const reserveHandler = (id) => {
     dispatch(reserveDragon(id));
@@ -38,7 +40,7 @@ export default function Dragon() {
             )}
             <div>
               <h2 className="dragon-name">{dragon.name}</h2>
-              {dragon.reserved && <span className="reserved-badge">Reserved</span>}
+              {dragon.reserved && <span className="reserved-badge-drag">Reserved</span>}
               <p className="dragon-desc">{dragon.desc}</p>
               <p>
                 {dragon.reserved ? (

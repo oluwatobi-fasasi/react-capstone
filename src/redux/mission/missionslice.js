@@ -1,8 +1,14 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
   missions: [],
 };
+
+export const fetchMissionAsync = createAsyncThunk('mission/fetchMission', async () => {
+  const response = await fetch('https://api.spacexdata.com/v3/missions');
+  const data = await response.json();
+  return data;
+});
 
 const missionSlice = createSlice({
   name: 'mission',
@@ -31,6 +37,8 @@ const missionSlice = createSlice({
     },
   },
 });
+
+export const selectAllMissions = (state) => state.mission.missions;
 
 export const { setMissions, reserveMission, cancelMission } = missionSlice.actions;
 
