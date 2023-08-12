@@ -14,7 +14,7 @@ const MissionPage = () => {
         const data = await response.json();
         dispatch(setMissions(data));
       } catch (error) {
-        console.error('Error fetching missions:', error);
+        // error handle
       }
     };
 
