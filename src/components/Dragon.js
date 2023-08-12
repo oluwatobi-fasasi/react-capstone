@@ -36,8 +36,8 @@ export default function Dragon() {
                 alt={`${dragon.name} Dragon`}
               />
             )}
-            <div className="desc">
-              <h3 className="dragon-name">{dragon.name}</h3>
+            <div>
+              <h2 className="dragon-name">{dragon.name}</h2>
               {dragon.reserved && <span className="reserved-badge">Reserved</span>}
               <p className="dragon-desc">{dragon.desc}</p>
               <p>
@@ -53,6 +53,7 @@ export default function Dragon() {
                   <button
                     type="button"
                     className="reserve-rocket-btn dragon-btn"
+                    data-testid="reserve-dragon-button"
                     onClick={() => reserveHandler(dragon.id)}
                   >
                     Reserve Dragon
