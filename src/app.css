@@ -12,8 +12,10 @@
 
 .logo {
   display: flex;
-  gap: 25px;
+  gap: 10px;
   align-items: center;
+  width: 335px;
+  justify-content: center;
 }
 
 .logo img {
@@ -242,7 +244,7 @@ p {
   border: 1px solid #ccc;
 }
 
-.reserved-badge {
+.reserved-badge-rock {
   width: 4.5rem;
   text-align: center;
   display: block;
@@ -251,8 +253,21 @@ p {
   background-color: #18a2b8;
   border-radius: 5px 5px 5px 5px;
   position: relative;
-  bottom: 7px;
+  bottom: 10px;
   margin: 0.6rem 0;
+}
+
+.reserved-badge-drag {
+  width: 4.5rem;
+  text-align: center;
+  display: block;
+  padding: 0.5rem;
+  color: white;
+  background-color: #18a2b8;
+  border-radius: 5px 5px 5px 5px;
+  position: relative;
+  margin: 0.6rem 0;
+  top: 10px;
 }
 
 .prof-rockets {
@@ -262,4 +277,5 @@ p {
 .prof-main-div {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
