@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dragon Component renders Dragon name and description 1`] = `
+<div
+  className="dragon-component"
+>
+  <ul />
+</div>
+`;
