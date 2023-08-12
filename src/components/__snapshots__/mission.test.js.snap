@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission Component Tests renders correctly when not reserved 1`] = `
+<div
+  className="mission-container"
+>
+  <div
+    className="mission-info"
+  >
+    <h2
+      className="miss-name"
+    >
+      Test Mission
+    </h2>
+    <p
+      className="miss-desc"
+    >
+      This is a test mission description.
+    </p>
+  </div>
+  <div
+    className="mission-status"
+  >
+    <span
+      className="not-member"
+    >
+      Not a member
+    </span>
+  </div>
+  <div
+    className="mission-buttons"
+  >
+    <button
+      className="join-button"
+      onClick={[Function]}
+      type="submit"
+    >
+      Join Mission
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Mission Component Tests renders correctly when reserved 1`] = `
+<div
+  className="mission-container"
+>
+  <div
+    className="mission-info"
+  >
+    <h2
+      className="miss-name"
+    >
+      Test Mission
+    </h2>
+    <p
+      className="miss-desc"
+    >
+      This is a test mission description.
+    </p>
+  </div>
+  <div
+    className="mission-status"
+  >
+    <span
+      className="active-member"
+    >
+      Active member
+    </span>
+  </div>
+  <div
+    className="mission-buttons"
+  >
+    <button
+      className="cancel-button"
+      onClick={[Function]}
+      type="submit"
+    >
+      Leave Mission
+    </button>
+  </div>
+</div>
+`;
